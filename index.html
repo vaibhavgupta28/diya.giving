@@ -4,7 +4,10 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Diya — Give to India and actually find out what happened.</title>
-<meta name="description" content="Diya is a charitable giving account for India. Give once, the tax side handled, the balance keeps working, and no organization gets its next release until it reports on the last one." />
+<meta name="description" content="Diya is a giving account for India. Give from $50, or set money aside now and give over time. Both tax-deductible in the US. And no organisation gets its next release until it has shown you what the last one did." />
+<meta property="og:title" content="Diya — Give to India and actually find out what happened." />
+<meta property="og:description" content="Give from $50, or set money aside now and give over time. Both tax-deductible. And nothing moves again until someone shows what the last release did." />
+<meta property="og:url" content="https://diya.giving" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..700&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -33,7 +36,7 @@ nav{position:relative;z-index:3;display:flex;align-items:center;justify-content:
 .navlink{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(247,243,236,.28);padding:9px 16px;border-radius:100px;transition:background .25s,border-color .25s,color .25s}
 .navlink:hover{background:var(--ghee);border-color:var(--ghee);color:var(--ink)}
 
-.hero{position:relative;z-index:2;text-align:center;padding:6px 0 70px}
+.hero{position:relative;z-index:2;text-align:center;padding:6px 0 66px}
 .lamp{position:relative;height:172px;display:flex;align-items:flex-end;justify-content:center;margin-bottom:8px}
 .glow{position:absolute;bottom:34px;left:50%;width:520px;height:520px;transform:translateX(-50%);background:radial-gradient(circle,rgba(242,193,78,.32) 0%,rgba(232,147,58,.14) 34%,transparent 66%);animation:breathe 5.5s ease-in-out infinite;pointer-events:none}
 @keyframes breathe{0%,100%{opacity:.85;transform:translateX(-50%) scale(1)}50%{opacity:1;transform:translateX(-50%) scale(1.07)}}
@@ -42,7 +45,7 @@ nav{position:relative;z-index:3;display:flex;align-items:center;justify-content:
 @keyframes flicker{0%,100%{transform:scale(1,1) skewX(0)}22%{transform:scale(.97,1.05) skewX(-2.2deg)}46%{transform:scale(1.03,.96) skewX(1.6deg)}71%{transform:scale(.98,1.03) skewX(-1deg)}}
 h1{font-size:clamp(42px,7.4vw,90px);font-variation-settings:"SOFT" 30,"WONK" 1;margin:0 auto 20px;max-width:17ch}
 h1 em{font-style:italic;color:var(--ghee);font-weight:500}
-.sub{font-size:clamp(18px,2.1vw,22px);color:rgba(247,243,236,.76);max-width:60ch;margin:0 auto 32px;line-height:1.55}
+.sub{font-size:clamp(18px,2.1vw,22px);color:rgba(247,243,236,.76);max-width:58ch;margin:0 auto 30px;line-height:1.55}
 .hero .eyebrow{color:var(--marigold);margin-bottom:22px}
 
 .capture{max-width:520px;margin:0 auto}
@@ -59,14 +62,15 @@ h1 em{font-style:italic;color:var(--ghee);font-weight:500}
 .err{display:none;margin-top:12px;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;color:#F0A08A}
 .err.show{display:block}
 
-.gap{position:relative;z-index:2;border-top:1px solid rgba(247,243,236,.14);padding:52px 0 68px}
-.gapgrid{display:grid;grid-template-columns:1fr auto 1fr;gap:34px;align-items:center;text-align:center}
-.stat .n{font-family:"Fraunces",serif;font-size:clamp(38px,6vw,66px);font-weight:400;line-height:1;letter-spacing:-.03em}
+/* live register band */
+.gap{position:relative;z-index:2;border-top:1px solid rgba(247,243,236,.14);padding:52px 0 66px}
+.gapgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;align-items:start;text-align:center}
+.stat .n{font-family:"Fraunces",serif;font-size:clamp(34px,5.4vw,58px);font-weight:400;line-height:1;letter-spacing:-.03em}
 .stat .n.dim{color:rgba(247,243,236,.42)}
 .stat .n.lit{color:var(--ghee)}
 .stat .l{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(247,243,236,.55);margin-top:14px;line-height:1.8}
-.vs{font-family:"Fraunces",serif;font-style:italic;font-size:20px;color:var(--ember)}
-.gapline{text-align:center;max-width:64ch;margin:38px auto 0;color:rgba(247,243,236,.72)}
+.gapline{text-align:center;max-width:66ch;margin:38px auto 0;color:rgba(247,243,236,.72)}
+.gapline b{color:var(--ghee);font-weight:400;font-style:italic}
 
 /* PAPER */
 .paper{background:var(--paper);color:var(--ink);position:relative}
@@ -77,6 +81,21 @@ h1 em{font-style:italic;color:var(--ghee);font-weight:500}
 .sechead .eyebrow{color:var(--ember);margin-bottom:16px}
 .sechead h2{font-size:clamp(31px,4.3vw,48px);font-variation-settings:"SOFT" 20;margin-bottom:18px}
 .sechead p{color:var(--muted);font-size:20px;margin:0}
+
+/* two doors */
+.doors{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.door{border:1px solid var(--rule);border-radius:4px;padding:32px 30px 34px;display:flex;flex-direction:column}
+.door.feature{border-color:var(--ember);background:var(--paper-2)}
+.doortag{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ember);margin-bottom:16px;display:block}
+.door h3{font-size:clamp(23px,2.7vw,29px);margin-bottom:12px}
+.door .who{font-style:italic;color:var(--clay);font-size:17px;margin:0 0 16px}
+.door p.d{margin:0 0 20px;color:var(--muted);font-size:17px;line-height:1.6}
+.door .facts{list-style:none;margin:0 0 22px;padding:0;border-top:1px solid var(--rule)}
+.door .facts li{padding:11px 0;border-bottom:1px solid var(--rule);font-size:15.5px;display:flex;justify-content:space-between;gap:16px}
+.door .facts li span:first-child{color:var(--muted)}
+.door .facts li span:last-child{text-align:right}
+.door .cta{margin-top:auto;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ember)}
+.doornote{margin:26px 0 0;font-size:17px;color:var(--muted);max-width:72ch}
 
 /* release gate */
 .gate{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--rule);position:relative}
@@ -98,6 +117,13 @@ h1 em{font-style:italic;color:var(--ghee);font-weight:500}
 .step .num{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;color:var(--ember);margin-bottom:18px}
 .step h3{font-size:22px;margin-bottom:10px}
 .step p{margin:0;font-size:16.5px;color:var(--muted);line-height:1.6}
+
+/* versus */
+.vs-rows{border-top:1px solid var(--rule)}
+.vrow{display:grid;grid-template-columns:1fr 1.35fr;gap:30px;padding:24px 0;border-bottom:1px solid var(--rule);align-items:baseline}
+.vrow .q{font-family:"Fraunces",serif;font-size:19px;font-weight:600;line-height:1.3}
+.vrow .a{color:var(--muted);font-size:17px;line-height:1.6;margin:0}
+.vrow .a b{color:var(--ink);font-weight:400;font-family:"Fraunces",serif}
 
 /* causes */
 .chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
@@ -143,6 +169,7 @@ footer{background:var(--ink);color:rgba(247,243,236,.5);border-top:1px solid rgb
 .frow{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:flex-start}
 .legal{font-family:"IBM Plex Mono",monospace;font-size:10.5px;line-height:1.9;letter-spacing:.04em;max-width:74ch}
 .legal b{color:rgba(247,243,236,.72);font-weight:500}
+.dom{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.14em;color:rgba(247,243,236,.4);margin-top:8px}
 
 @media (max-width:980px){
   .gate{grid-template-columns:repeat(2,1fr)}
@@ -156,6 +183,8 @@ footer{background:var(--ink);color:rgba(247,243,236,.5);border-top:1px solid rgb
   .step:nth-child(1),.step:nth-child(2){border-bottom:1px solid var(--rule)}
   .promise{grid-template-columns:1fr}
   .pcol{padding:28px 24px}
+  .doors{grid-template-columns:1fr}
+  .vrow{grid-template-columns:1fr;gap:8px}
 }
 @media (max-width:640px){
   body{font-size:18px}
@@ -164,14 +193,14 @@ footer{background:var(--ink);color:rgba(247,243,236,.5);border-top:1px solid rgb
   .steps,.gate{grid-template-columns:1fr}
   .step,.tranche{border-right:0;border-bottom:1px solid var(--rule)}
   .step:last-child,.tranche:last-child{border-bottom:0}
-  .gapgrid{grid-template-columns:1fr;gap:22px}
-  .vs{display:none}
+  .gapgrid{grid-template-columns:1fr;gap:26px}
   .field{flex-direction:column;border-radius:20px;padding:8px;gap:8px}
   .field input{padding:12px 14px;text-align:center}
   .btn{width:100%;padding:15px}
   .ladder{grid-template-columns:1fr}
   .rung .code{padding:18px 0 0;border-top:1px solid var(--rule)}
   .rung .desc{padding:6px 0 18px;border-top:0}
+  .door{padding:26px 22px 28px}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
@@ -211,12 +240,12 @@ footer{background:var(--ink);color:rgba(247,243,236,.5);border-top:1px solid rgb
         </svg>
       </div>
 
-      <p class="eyebrow">Coming soon · Giving to India, done properly</p>
+      <p class="eyebrow">Coming soon · diya.giving</p>
       <h1>Give to India, and <em>actually find out</em> what happened.</h1>
       <p class="sub">
-        Most giving to India ends the moment the money leaves. Diya keeps it going.
-        Give once, choose organisations we've checked, and no one receives their next
-        release until they've reported on the last one.
+        Give today from $50, or set money aside now and decide later. Both are tax-deductible
+        in the US. And no organisation receives its next release until it has shown you what
+        the last one did.
       </p>
 
       <form class="capture" id="form-top" novalidate>
@@ -233,14 +262,14 @@ footer{background:var(--ink);color:rgba(247,243,236,.5);border-top:1px solid rgb
 
   <div class="wrap gap">
     <div class="gapgrid">
-      <div class="stat"><div class="n lit">$438B</div><div class="l">Estimated collective net worth,<br>Indian Americans</div></div>
-      <div class="vs">and yet</div>
-      <div class="stat"><div class="n dim">$200M</div><div class="l">Estimated annual giving<br>from that community to India</div></div>
+      <div class="stat"><div class="n lit">14,449</div><div class="l">Indian organisations currently<br>cleared to receive money from abroad</div></div>
+      <div class="stat"><div class="n dim">22,498</div><div class="l">Whose clearance has been<br>cancelled</div></div>
+      <div class="stat"><div class="n dim">15,212</div><div class="l">Whose clearance has quietly<br>expired</div></div>
     </div>
     <p class="gapline">
-      That gap isn't generosity. It's friction. No clear way to tell which organisations are
-      legitimate, a cross-border rulebook nobody wants to read, and nothing credible to show for
-      it afterward. Diya removes all three.
+      That register changes every month. An organisation that was legitimate in January can be
+      unable to legally receive your money by June, and nobody tells the donor. <b>We check the
+      day your money moves, not once a year.</b>
     </p>
   </div>
 </section>
@@ -250,13 +279,85 @@ footer{background:var(--ink);color:rgba(247,243,236,.5);border-top:1px solid rgb
     <g fill="currentColor" opacity=".55" id="dots"></g>
   </svg>
 
+  <!-- TWO DOORS -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sechead">
+        <p class="eyebrow">Start here</p>
+        <h2>Two ways in. Pick the one that fits your year.</h2>
+        <p>The difference is only about timing and tax. Everything after the first step is identical: same checked organisations, same evidence, same release rules.</p>
+      </div>
+
+      <div class="doors">
+        <div class="door">
+          <span class="doortag">Option one</span>
+          <h3>Give now</h3>
+          <p class="who">For most people, most of the time.</p>
+          <p class="d">
+            Choose a cause rather than hunting for an organisation. Your gift joins others in a
+            fund we grant out every quarter, which is what makes small gifts worth sending
+            across a border at all. You see exactly where the quarter's money went.
+          </p>
+          <ul class="facts">
+            <li><span>Minimum</span><span>$50</span></li>
+            <li><span>Receipt</span><span>At checkout</span></li>
+            <li><span>Deductible</span><span>Even if you don't itemise</span></li>
+            <li><span>Money reaches India</span><span>Every quarter</span></li>
+          </ul>
+          <p class="cta">Choose a cause →</p>
+        </div>
+
+        <div class="door feature">
+          <span class="doortag">Option two · best for shares</span>
+          <h3>Open a Diya account</h3>
+          <p class="who">For anyone giving from stock, or above roughly $15,000 a year.</p>
+          <p class="d">
+            Move cash or appreciated shares in once. Take the deduction for this year. Skip the
+            capital gains you'd owe on selling first. The balance stays invested while you take
+            your time deciding where it should go, and you give from it for as long as you like.
+          </p>
+          <ul class="facts">
+            <li><span>Best above</span><span>$15,000 a year</span></li>
+            <li><span>Accepts</span><span>Cash and public shares</span></li>
+            <li><span>Tax moment</span><span>Once, when you contribute</span></li>
+            <li><span>Give out</span><span>In parts, over years</span></li>
+          </ul>
+          <p class="cta">See how it works →</p>
+        </div>
+      </div>
+
+      <p class="doornote">
+        Not sure which? Answer one question at signup and we'll point you at the right one. Most
+        households under $15,000 a year of giving are better off with option one, and we'll say
+        so even though option two earns us more.
+      </p>
+    </div>
+  </section>
+
+  <!-- HOW -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sechead">
+        <p class="eyebrow">How it works</p>
+        <h2>Four steps. You do the first and the third.</h2>
+        <p>US charitable rules, Indian regulation, currency conversion, and verification all happen behind the account.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="num">01</div><h3>Give</h3><p>Cash or shares, held by an established US public charity. The tax side is handled once, at the start, and the paperwork lands in your records.</p></div>
+        <div class="step"><div class="num">02</div><h3>It keeps working</h3><p>If you're not giving it out immediately, the balance sits in approved investment options rather than idle. Growth stays dedicated to giving. Value can go down as well as up.</p></div>
+        <div class="step"><div class="num">03</div><h3>Choose a cause</h3><p>Pick from Indian organisations we've checked for registration, banking, governance, and whether they can actually report back. You recommend; the charity approves and sends.</p></div>
+        <div class="step"><div class="num">04</div><h3>See what it did</h3><p>Transfer record, delivery evidence, and outcome, each dated and sourced. Then the next release depends on it.</p></div>
+      </div>
+    </div>
+  </section>
+
   <!-- THE GATE -->
   <section class="sec">
     <div class="wrap">
       <div class="sechead">
         <p class="eyebrow">The part nobody else does</p>
         <h2>Money moves in stages. Reporting unlocks the next one.</h2>
-        <p>Giving to a cause for fifteen years is easy to promise and hard to hold anyone to. So we don't rely on goodwill. Each release is a condition, not a favour.</p>
+        <p>Funding something for fifteen years is easy to promise and hard to hold anyone to. So we don't rely on goodwill. Each release is a condition, not a favour.</p>
       </div>
 
       <div class="gate" id="gate">
@@ -291,19 +392,52 @@ footer{background:var(--ink);color:rgba(247,243,236,.5);border-top:1px solid rgb
     </div>
   </section>
 
-  <!-- HOW -->
+  <!-- VERSUS -->
   <section class="sec">
     <div class="wrap">
       <div class="sechead">
-        <p class="eyebrow">How it works</p>
-        <h2>Four steps. You do the first and the third.</h2>
-        <p>US charitable rules, Indian regulation, currency, and verification all happen behind the account.</p>
+        <p class="eyebrow">Fair questions</p>
+        <h2>Why not just do what you're doing now?</h2>
+        <p>Most people we've spoken to are already giving to India somehow. Here's the honest comparison, including where the other option is fine.</p>
       </div>
-      <div class="steps">
-        <div class="step"><div class="num">01</div><h3>Contribute</h3><p>Move cash or shares into your account, held by an established US public charity. The tax side is handled once, at the start, and you get the paperwork for your records.</p></div>
-        <div class="step"><div class="num">02</div><h3>It keeps working</h3><p>While you decide, the balance sits in approved investment options rather than idle. Growth stays dedicated to giving. Value can go down as well as up.</p></div>
-        <div class="step"><div class="num">03</div><h3>Choose where it goes</h3><p>Pick from Indian organisations we've checked for registration, banking, governance, and whether they can actually report back. You recommend; the charity approves and sends.</p></div>
-        <div class="step"><div class="num">04</div><h3>See what it did</h3><p>Transfer record, delivery evidence, and outcome, dated and sourced. Then the next release depends on it.</p></div>
+      <div class="vs-rows">
+        <div class="vrow">
+          <div class="q">Why not send money to family to hand over?</div>
+          <p class="a"><b>Because you can't deduct it, and you'll never see a report.</b> It's fast and it's personal, and for a relative in trouble it's the right call. But it isn't charitable giving in the eyes of the IRS, and there is no record of what the money did.</p>
+        </div>
+        <div class="vrow">
+          <div class="q">Why not use an Indian giving website?</div>
+          <p class="a"><b>They're built for rupees, not for your US tax return.</b> They do a good job inside India. What they can't give an American taxpayer is a deduction, a way to give shares instead of cash, or a balance that grows while you decide.</p>
+        </div>
+        <div class="vrow">
+          <div class="q">Why not use the big US giving account I already have?</div>
+          <p class="a"><b>You can, and we'll take grants from it.</b> What they don't have is India. They can't tell you whether an organisation's clearance is current this week, or chase a report from a district office in Odisha. That's the whole of what we do.</p>
+        </div>
+        <div class="vrow">
+          <div class="q">Why not give to a US charity that works in India?</div>
+          <p class="a"><b>Often you should, and several are on our list.</b> The limit is choice. You get their portfolio, not yours, and you rarely find out what your specific gift funded. We'll happily route you to one when it's the better answer.</p>
+        </div>
+        <div class="vrow">
+          <div class="q">What makes you different, in one line?</div>
+          <p class="a"><b>We're the only one that withholds the next release until the last one is accounted for.</b> Everyone can move money. Almost nobody makes the money conditional on evidence, because it's slow, unpopular with organisations, and expensive to run.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVIDENCE -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sechead">
+        <p class="eyebrow">Proof, not photographs</p>
+        <h2>Every claim comes with its receipts.</h2>
+        <p>A picture of a smiling child is marketing. We grade what we show you, and we say what each level does and doesn't prove.</p>
+      </div>
+      <div class="ladder">
+        <div class="rung"><div class="code">E1</div><div class="desc"><strong>Money arrived</strong><span>Approval, transfer record, exchange rate, and the organisation's receipt.</span></div></div>
+        <div class="rung"><div class="code">E2</div><div class="desc"><strong>Delivery documented</strong><span>Invoices, procurement and distribution records, reviewed field evidence.</span></div></div>
+        <div class="rung"><div class="code">E3</div><div class="desc"><strong>Outcome measured</strong><span>A defined metric with a method, a time period, a result, and stated limitations.</span></div></div>
+        <div class="rung"><div class="code">E4</div><div class="desc"><strong>Independently verified</strong><span>Site visit, audit, or evaluation by someone with no stake in the result.</span></div></div>
       </div>
     </div>
   </section>
@@ -314,7 +448,7 @@ footer{background:var(--ink);color:rgba(247,243,236,.5);border-top:1px solid rgb
       <div class="sechead">
         <p class="eyebrow">What you can support</p>
         <h2>The places you already care about, checked properly.</h2>
-        <p>We start with organisations that are already registered to receive funds from abroad, across the causes families ask for most.</p>
+        <p>We start with organisations already registered to receive funds from abroad, across the causes families ask for most.</p>
       </div>
       <div class="chips">
         <span class="chip">Educating a child through school</span>
@@ -338,30 +472,13 @@ footer{background:var(--ink);color:rgba(247,243,236,.5);border-top:1px solid rgb
     </div>
   </section>
 
-  <!-- EVIDENCE -->
-  <section class="sec">
-    <div class="wrap">
-      <div class="sechead">
-        <p class="eyebrow">Proof, not photographs</p>
-        <h2>Every claim comes with its receipts.</h2>
-        <p>A picture of a smiling child is marketing. We grade what we show you, and we say what each level does and doesn't prove.</p>
-      </div>
-      <div class="ladder">
-        <div class="rung"><div class="code">E1</div><div class="desc"><strong>Money arrived</strong><span>Approval, transfer record, exchange rate, and the organisation's receipt.</span></div></div>
-        <div class="rung"><div class="code">E2</div><div class="desc"><strong>Delivery documented</strong><span>Invoices, procurement and distribution records, reviewed field evidence.</span></div></div>
-        <div class="rung"><div class="code">E3</div><div class="desc"><strong>Outcome measured</strong><span>A defined metric with a method, a time period, a result, and stated limitations.</span></div></div>
-        <div class="rung"><div class="code">E4</div><div class="desc"><strong>Independently verified</strong><span>Site visit, audit, or evaluation by someone with no stake in the result.</span></div></div>
-      </div>
-    </div>
-  </section>
-
   <!-- LAMPS -->
   <section class="sec">
     <div class="wrap">
       <div class="sechead" style="max-width:60ch">
-        <p class="eyebrow">Why a lamp</p>
+        <p class="eyebrow">Give together</p>
         <h2>A flame lit from another flame loses nothing.</h2>
-        <p>Giving to India already happens quietly, through family and friends who vouch for something. Diya is built for how that trust actually travels.</p>
+        <p>Giving to India already happens through family and friends who vouch for something. Start a circle with your household, your batch, your alumni group or your hospital, pick a cause together, and see one report you all trust.</p>
       </div>
       <div class="lamps" id="lamps" aria-hidden="true"></div>
       <p class="lampline">One household lights the next, and the first is no dimmer for it.</p>
@@ -384,7 +501,7 @@ footer{background:var(--ink);color:rgba(247,243,236,.5);border-top:1px solid rgb
             <li>Sends funds directly to each organisation's designated account in India, with no middle stop</li>
             <li>Re-checks registration, banking, and sanctions immediately before any money moves</li>
             <li>Holds the next release until the last one has been reported and reviewed</li>
-            <li>Keeps your name, balance, and amounts private unless you choose otherwise</li>
+            <li>Tells you when the cheaper or simpler option is somebody else's product</li>
             <li>Protects the dignity of the people served. No identifiable faces without documented consent</li>
           </ul>
         </div>
@@ -396,7 +513,7 @@ footer{background:var(--ink);color:rgba(247,243,236,.5);border-top:1px solid rgb
             <li>That 100% reaches the field, when banking and verification cost real money</li>
             <li>That your specific dollar bought one specific meal, when funds are pooled</li>
             <li>That you can sponsor one named child. We fund the programme that keeps a class in school</li>
-            <li>That we'll ever sell, rent, or broker your data. Not now, not at scale</li>
+            <li>That you stay anonymous to India. Indian rules now require donors behind cross-border gifts to be named in an organisation's annual return, and we'll tell you before you give</li>
           </ul>
         </div>
       </div>
@@ -422,27 +539,30 @@ footer{background:var(--ink);color:rgba(247,243,236,.5);border-top:1px solid rgb
 
 <footer>
   <div class="wrap frow">
-    <a class="brand" href="#top">
-      <svg class="mark" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.5c1.9 2.6 3 4.3 3 6a3 3 0 1 1-6 0c0-1.7 1.1-3.4 3-6z" fill="#F2C14E"/><path d="M3 15.5h18c-1 3.6-4.4 6-9 6s-8-2.4-9-6z" fill="#C6572B"/></svg>
-      <span class="word">Diya</span>
-    </a>
+    <div>
+      <a class="brand" href="#top">
+        <svg class="mark" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.5c1.9 2.6 3 4.3 3 6a3 3 0 1 1-6 0c0-1.7 1.1-3.4 3-6z" fill="#F2C14E"/><path d="M3 15.5h18c-1 3.6-4.4 6-9 6s-8-2.4-9-6z" fill="#C6572B"/></svg>
+        <span class="word">Diya</span>
+      </a>
+      <p class="dom">diya.giving</p>
+    </div>
     <p class="legal">
       <b>Diya is in development and is not yet accepting contributions.</b><br>
       Nothing here is legal, tax, or investment advice. Diya is a technology and operations provider.
-      Charitable accounts are intended to be maintained by an established US 501(c)(3) sponsoring
-      organisation, which would hold legal control of contributed assets; donors recommend grants and
-      investment allocations subject to that organisation's approval. Contributions are irrevocable and
-      cannot be returned. Whether a contribution is deductible depends on your own circumstances, so
-      speak to your tax adviser. Invested balances can lose value. Grants to Indian organisations are
-      subject to eligibility review and applicable law in both countries.<br>
+      Charitable accounts and cause funds are intended to be maintained by an established US 501(c)(3)
+      sponsoring organisation, which would hold legal control of contributed assets; donors recommend
+      grants and investment allocations subject to that organisation's approval. Contributions are
+      irrevocable and cannot be returned. Whether a contribution is deductible, and on what terms,
+      depends on your own circumstances, so speak to your tax adviser. Invested balances can lose
+      value. Grants to Indian organisations are subject to eligibility review and applicable law in
+      both countries, including donor disclosure requirements in India. Registration figures cited are
+      from India's public FCRA portal as at 15 July 2026.<br>
       © 2026 Diya
     </p>
   </div>
 </footer>
 
 <script>
-/* Swap ENDPOINT for your provider (Formspree, ConvertKit, Beehiiv, Mailchimp).
-   Leave null to keep the in-memory demo behaviour. */
 const ENDPOINT = null;
 const collected = [];
 const isEmail = v => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim());
@@ -468,7 +588,6 @@ document.querySelectorAll('form.capture').forEach(form => {
   });
 });
 
-/* rangoli dots */
 const dots = document.getElementById('dots');
 for (let x = 0; x <= 1200; x += 50) {
   const c = document.createElementNS('http://www.w3.org/2000/svg','circle');
@@ -476,7 +595,6 @@ for (let x = 0; x <= 1200; x += 50) {
   dots.appendChild(c);
 }
 
-/* release gate fills in sequence */
 const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const gate = document.getElementById('gate');
 const tranches = Array.from(gate.children);
@@ -494,7 +612,6 @@ if (still) {
   }, { threshold: .4 }).observe(gate);
 }
 
-/* lamps */
 const LAMP = '<svg viewBox="0 0 90 84">'
   + '<g class="f">'
   + '<ellipse cx="45" cy="26" rx="13" ry="24" fill="#C6572B" opacity=".22"/>'
